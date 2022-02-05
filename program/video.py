@@ -193,7 +193,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ ᴠɪᴅᴇᴏ:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                                 )
         else:
             if len(m.command) < 2:
@@ -317,8 +317,8 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🗂 **Name:** [{songname}]({url}) | `video`\n⏱ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
-                            )
+                                caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ ᴠɪᴅᴇᴏ:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                                )
                         except Exception as ep:
                             await loser.delete()
                             await m.reply_text(f"🚫 error: `{ep}`")
