@@ -201,7 +201,7 @@ async def vplay(c: Client, m: Message):
                     "🎵 **ʜᴇʏ ᴛʏᴘᴇ ᴛʜᴇ sᴏɴɢ ɴᴀᴍᴇ ʙʀᴜʜ...**"
             )
             else:
-                loser = await c.send_message(chat_id, "🔍 **Searching...**")
+                loser = await c.send_message(chat_id, "🔍")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 Q = 720
@@ -265,7 +265,7 @@ async def vplay(c: Client, m: Message):
                 "🎵 **ʜᴇʏ ᴛʏᴘᴇ ᴛʜᴇ sᴏɴɢ ɴᴀᴍᴇ ʙʀᴜʜ...**"
             )
         else:
-            loser = await c.send_message(chat_id, "🔍 **Searching...**")
+            loser = await c.send_message(chat_id, "🔍")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             Q = 720
