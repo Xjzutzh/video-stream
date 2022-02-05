@@ -146,7 +146,7 @@ async def play(c: Client, m: Message):
                     userid = m.from_user.id
                     thumbnail = f"{IMG_5}"
                     image = await thumb(thumbnail, title, userid, ctitle)
-                    await suhu.edit("🔄 **Joining vc...**")
+                    await suhu.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
@@ -208,7 +208,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🔄 **Joining vc...**")
+                                await suhu.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -269,7 +269,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("🔄 **Joining vc...**")
+                            await suhu.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
