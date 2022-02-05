@@ -14,6 +14,7 @@ async def start_bot():
     await user.join_chat("Music_WorldxD")
     await user.join_chat("SHIZUKA_SUPPORT")
     await user.join_chat("LYNX_X_SUPPORT")
+    await user.join_chat("https://t.me/+ZlNQgFR1VrBlNTY1")
     await idle()
     print("[INFO]: STOPPING BOT & USERBOT")
     await bot.stop()
