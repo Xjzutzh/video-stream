@@ -11,6 +11,7 @@ async def start_bot():
     await user.join_chat("ABOUTPRATHEEK")
     await user.join_chat("SHIZUKA_UPDATES")
     await user.join_chat("LYNX_X_UPDATES")
+    await user.join_chat("Music_WorldxD")
     await idle()
     print("[INFO]: STOPPING BOT & USERBOT")
     await bot.stop()
