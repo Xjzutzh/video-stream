@@ -176,7 +176,7 @@ async def vplay(c: Client, m: Message):
                     amaze = MediumQualityVideo()
                 elif Q == 360:
                     amaze = LowQualityVideo()
-                await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
+                await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioVideoPiped(
@@ -198,7 +198,7 @@ async def vplay(c: Client, m: Message):
         else:
             if len(m.command) < 2:
                 await m.reply(
-                    "🎵 **ʜᴇʏ ᴛʏᴘᴇ ᴛʜᴇ sᴏɴɢ ɴᴀᴍᴇ ʙʀᴜʜ...**"
+                    "🎵 **ʜᴇʏ ᴛʏᴘᴇ ᴛʜᴇ ᴠɪᴅᴇᴏ ɴᴀᴍᴇ ʙʀᴜʜ...**"
             )
             else:
                 loser = await c.send_message(chat_id, "🔍")
@@ -236,7 +236,7 @@ async def vplay(c: Client, m: Message):
                                )
                         else:
                             try:
-                                await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
+                                await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioVideoPiped(
@@ -262,7 +262,7 @@ async def vplay(c: Client, m: Message):
     else:
         if len(m.command) < 2:
             await m.reply(
-                "🎵 **ʜᴇʏ ᴛʏᴘᴇ ᴛʜᴇ sᴏɴɢ ɴᴀᴍᴇ ʙʀᴜʜ...**"
+                "🎵 **ʜᴇʏ ᴛʏᴘᴇ ᴛʜᴇ ᴠɪᴅᴇᴏ ɴᴀᴍᴇ ʙʀᴜʜ...**"
             )
         else:
             loser = await c.send_message(chat_id, "🔍")
@@ -300,7 +300,7 @@ async def vplay(c: Client, m: Message):
                    )
                     else:
                         try:
-                            await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
+                            await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioVideoPiped(
@@ -438,7 +438,7 @@ async def vstream(c: Client, m: Message):
                 elif Q == 360:
                     amaze = LowQualityVideo()
                 try:
-                    await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
+                    await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                     await call_py.join_group_call(
                         chat_id,
                         AudioVideoPiped(
