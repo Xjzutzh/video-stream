@@ -36,12 +36,12 @@ async def leave_chat(_, m: Message):
         await user.leave_chat(chat_id)
         return await _.send_message(
             chat_id,
-            "✅ userbot leaved chat",
+            "✅ ᴜsᴇʀʙᴏᴛ ʟᴇᴀᴠɪɴɢ ᴛʜɪs ᴄʜᴀᴛ",
         )
     except UserNotParticipant:
         return await _.send_message(
             chat_id,
-            "❌ userbot already leave chat",
+            "❌ ᴜsᴇʀʙᴏᴛ ʜᴀᴠᴇ ᴀʟʀᴇᴀᴅʏ ʟᴇғᴛ ᴛʜɪs ᴄʜᴀᴛ",
         )
 
 
@@ -54,7 +54,7 @@ async def leave_all(client, message):
     left = 0
     failed = 0
     
-    msg = await message.reply("🔄 Userbot leaving all Group !")
+    msg = await message.reply("🔄 ᴋᴇᴋ ᴜsᴇʀʙᴏᴛ ʟᴇᴀᴠɪɴɢ ᴀʟʟ ɢʀᴏᴜᴘs !")
     async for dialog in user.iter_dialogs():
         try:
             await user.leave_chat(dialog.chat.id)
