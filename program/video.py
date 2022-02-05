@@ -161,7 +161,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"🏷 **ꜱᴏɴɢ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                    caption=f"🏷 **ᴠɪᴅᴇᴏ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                    )
             else:
                 gcname = m.chat.title
@@ -193,7 +193,7 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
             )
         else:
             if len(m.command) < 2:
@@ -232,7 +232,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"🏷 **ꜱᴏɴɢ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                                caption=f"🏷 **ᴠɪᴅᴇᴏ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                                )
                         else:
                             try:
@@ -253,7 +253,7 @@ async def vplay(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                                 )
                             except Exception as ep:
                                 await loser.delete()
@@ -296,7 +296,7 @@ async def vplay(c: Client, m: Message):
                         await m.reply_photo(
                             photo=image,
                             reply_markup=InlineKeyboardMarkup(buttons),
-                            caption=f"🏷 **ꜱᴏɴɢ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                            caption=f"🏷 **ᴠɪᴅᴇᴏ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                    )
                     else:
                         try:
@@ -317,7 +317,7 @@ async def vplay(c: Client, m: Message):
                             await m.reply_photo(
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
-                                caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                                caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url})\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                                 )
                         except Exception as ep:
                             await loser.delete()
