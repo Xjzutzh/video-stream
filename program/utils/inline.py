@@ -11,12 +11,12 @@ from pyrogram.types import (
 def stream_markup(user_id):
   buttons = [
     [
-      InlineKeyboardButton(text="• Mᴇɴᴜ", callback_data=f'cbmenu | {user_id}'),
-    ],
-    [
-      InlineKeyboardButton(text="• Updates", callback_data=f'cls'),
-      InlineKeyboardButton(text="• Support", callback_data=f'cls'),
-    ],
+      InlineKeyboardButton("•🗣️ Sᴜᴘᴘᴏʀᴛ•", url="t.me/SHIZUKA_SUPPORT"),
+      InlineKeyboardButton("•📣 Uᴘᴅᴀᴛᴇs•", url="t.me/SHIZUKA_UPDATES"),
+     ],
+     [
+      InlineKeyboardButton("•Oᴡɴᴇʀ•", url="t.me/pratheek06"),
+     ]
   ]
   return buttons
 
@@ -24,12 +24,12 @@ def stream_markup(user_id):
 def menu_markup(user_id):
   buttons = [
     [
-      InlineKeyboardButton(text="End-⏹", callback_data=f'cbstop | {user_id}'),
-      InlineKeyboardButton(text="Pause-⏸", callback_data=f'cbpause | {user_id}'),
-      InlineKeyboardButton(text="Resume-▶️", callback_data=f'cbresume | {user_id}'),
+      InlineKeyboardButton(text="End⏹", callback_data=f'cbstop | {user_id}'),
+      InlineKeyboardButton(text="Pause⏸", callback_data=f'cbpause | {user_id}'),
+      InlineKeyboardButton(text="Resume▶️", callback_data=f'cbresume | {user_id}'),
     ],
     [
-      InlineKeyboardButton(text="Mute-🔇", callback_data=f'cbmute | {user_id}'),
+      InlineKeyboardButton(text="Mute🔇", callback_data=f'cbmute | {user_id}'),
       InlineKeyboardButton(text="Unmute🔊", callback_data=f'cbunmute | {user_id}'),
     ],
     [
