@@ -161,8 +161,8 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"💡 **Track added to queue »** `{pos}`\n\n🗂 **Name:** [{songname}]({link}) | `video`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
-                )
+                    caption=f"🏷 **ꜱᴏɴɢ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                   )
             else:
                 gcname = m.chat.title
                 ctitle = await CHAT_TITLE(gcname)
@@ -176,7 +176,7 @@ async def vplay(c: Client, m: Message):
                     amaze = MediumQualityVideo()
                 elif Q == 360:
                     amaze = LowQualityVideo()
-                await loser.edit("🔄 **Joining vc...**")
+                await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioVideoPiped(
@@ -193,15 +193,15 @@ async def vplay(c: Client, m: Message):
                 await m.reply_photo(
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"🗂 **Name:** [{songname}]({link}) | `video`\n⏱️ **Duration:** `{duration}`\n🧸 **Request by:** {requester}",
-                )
+                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
+                                )
         else:
             if len(m.command) < 2:
                 await m.reply(
                     "» reply to an **video file** or **give something to search.**"
                 )
             else:
-                loser = await c.send_message(chat_id, "🔍 **Searching...**")
+                loser = await c.send_message(chat_id, "🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 Q = 720
