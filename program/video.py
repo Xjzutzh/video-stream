@@ -194,7 +194,7 @@ async def vplay(c: Client, m: Message):
                     photo=image,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ ᴠɪᴅᴇᴏ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
-                                )
+            )
         else:
             if len(m.command) < 2:
                 await m.reply(
@@ -233,7 +233,7 @@ async def vplay(c: Client, m: Message):
                                 photo=image,
                                 reply_markup=InlineKeyboardMarkup(buttons),
                                 caption=f"🏷 **ꜱᴏɴɢ ᴀᴅᴅᴇᴅ ᴛᴏ Qᴜᴇᴜᴇ »** `{pos}`\n\n🏷 **ɴᴀᴍᴇ:** [{songname}]({link}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴠɪᴅᴇᴏ ɪɴ ǫᴜᴇᴜᴇ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
-                   )
+                               )
                         else:
                             try:
                                 await loser.edit("🔍 **ᴘʟᴀʏɪɴɢ ᴠɪᴀ ᴘʀᴀᴛʜᴇᴇᴋ's sᴇʀᴠᴇʀ...**")
