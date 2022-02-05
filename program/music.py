@@ -164,7 +164,7 @@ async def play(c: Client, m: Message):
                     await m.reply_photo(
                         photo=image,
                         reply_markup=InlineKeyboardMarkup(buttons),
-                        caption=f"🗂 **Name:** [{songname}]({link}) | `music`\n💭 **Chat:** `{chat_id}`\n🧸 **Request by:** {requester}",
+                        caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                     )
                 except Exception as e:
                     await suhu.delete()
@@ -226,7 +226,7 @@ async def play(c: Client, m: Message):
                                 await m.reply_photo(
                                     photo=image,
                                     reply_markup=InlineKeyboardMarkup(buttons),
-                                    caption=f"🗂 **Name:** [{songname}]({url}) | `music`\n**⏱ Duration:** `{duration}`\n🧸 **Request by:** {requester}",
+                                    caption=f"☑️ **ɴᴀᴍᴇ:** [{songname}]({url}) | `music`\n⏱ **ᴅᴜʀᴀᴛɪᴏɴ:** `{duration}`\n💡 **ꜱᴛᴀᴛᴜꜱ:** `ᴘʟᴀʏɪɴɢ`\n🎧 **ᴀᴅᴅᴇᴅ ʙʏ:** {requester}",
                                 )
                             except Exception as ep:
                                 await suhu.delete()
